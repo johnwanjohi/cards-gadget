@@ -1,0 +1,9 @@
+<table border="1" cellspacing="2" cellpadding="2">
+    <tbody>
+        <tr *ngFor="let k of counter; let i = index">
+            <td (click)="click(k.id)">
+                {{selectedID === k.id ? 'Up':'Down'}}
+            </td>
+        </tr>
+    </tbody>
+</table>
